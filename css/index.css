@@ -25,13 +25,17 @@ p{
 	margin: 5px 0;
 	padding: 2px 0 3px;
 	text-align: center;
-	position: relative;
 	cursor: pointer;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	behavior: url(/Content/js/PIE.htc);
+	position: relative;
 	z-index: 10;
 }
 .car li.active div,.car li:hover div{
 	background: #EC6C1A;
-	border-radius: 5px;
+	
 }
 .car li div .arrow_down{
 	display: none;
@@ -47,8 +51,9 @@ p{
 	left: 35px;
 	bottom:-6px;
 	z-index: 9;
-	background: url(../img/arrow_down.png) no-repeat 0 0;
+	background-image: url(../img/arrow_down.png) no-repeat 0 0;
 	background-size: 100%;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/arrow_down.png',sizingMethod='scale');
 }
 .car li p{
 	color: #333333;
@@ -58,113 +63,90 @@ p{
 	display: inline-block;
 	width: 65px;
 	height: 30px;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size:100%; 
 }
 .car li div .icon_car_wx,.car li div .icon_car_ddc{
 	width: 50px;
 }
 .icon_car_wx{
-	background: url(../img/car_wx.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_wx.png);
 }
 .icon_car_xx{
-	background: url(../img/car_xx.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_xx.png);
 }
 .icon_car_jc{
-	background: url(../img/car_jc.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_jc.png);
 }
 .icon_car_zx{
-	background: url(../img/car_zx.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_zx.png);
 }
 .icon_car_zdx{
-	background: url(../img/car_zdx.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_zdx.png);
 }
 .icon_car_dx{
-	background: url(../img/car_dxc.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_dxc.png);
 }
 .icon_car_pc{
-	background: url(../img/car_pc.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_pc.png);
 }
 .icon_car_suv{
-	background: url(../img/car_suv.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_suv.png);
 }
 .icon_car_mpv{
-	background: url(../img/car_mpv.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_mpv.png);
 }
 .icon_car_mb{
-	background: url(../img/car_mb.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_mb.png);
 }
 .icon_car_kc{
-	background: url(../img/car_kc.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_kc.png);
 }
 .icon_car_ddc{
-	background: url(../img/car_ddc.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_ddc.png);
 }
 .icon_car_sy{
-	background: url(../img/car_sy.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_sy.png);
 }
 .car li.active div .icon_car_wx,.car li:hover div .icon_car_wx{
-	background: url(../img/car_wx_w.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_wx_w.png);
 }
 .car li.active div .icon_car_xx,.car li:hover div .icon_car_xx{
-	background: url(../img/car_xx_w.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_xx_w.png);
 }
 .car li.active div .icon_car_jc,.car li:hover div .icon_car_jc{
-	background: url(../img/car_jc_w.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_jc_w.png);
 }
 .car li.active div .icon_car_zx,.car li:hover div .icon_car_zx{
-	background: url(../img/car_zx_w.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_zx_w.png);
 }
 .car li.active div .icon_car_zdx,.car li:hover div .icon_car_zdx{
-	background: url(../img/car_zdx_w.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_zdx_w.png);
 }
 .car li.active div .icon_car_dx,.car li:hover div .icon_car_dx{
-	background: url(../img/car_dxc_w.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_dxc_w.png);
 }
 .car li.active div .icon_car_pc,.car li:hover div .icon_car_pc{
-	background: url(../img/car_pc_w.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_pc_w.png);
 }
 .car li.active div .icon_car_suv,.car li:hover div .icon_car_suv{
-	background: url(../img/car_suv_w.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_suv_w.png);
 }
 .car li.active div .icon_car_mpv,.car li:hover div .icon_car_mpv{
-	background: url(../img/car_mpv_w.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_mpv_w.png);
 }
 .car li.active div .icon_car_mb,.car li:hover div .icon_car_mb{
-	background: url(../img/car_mb_w.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_mb_w.png);
 }
 .car li.active div .icon_car_kc,.car li:hover div .icon_car_kc{
-	background: url(../img/car_kc_w.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_kc_w.png);
 }
 .car li.active div .icon_car_ddc,.car li:hover div .icon_car_ddc{
-	background: url(../img/car_ddc_w.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_ddc_w.png);
 }
 .car li.active div .icon_car_sy,.car li:hover div .icon_car_sy{
-	background: url(../img/car_sy_w.png) no-repeat bottom right;
-	background-size: 100%;
+	background-image: url(../img/car_sy_w.png);
 }
 
 .host_car{
@@ -196,7 +178,7 @@ p{
 	
 }
 .host_car .left div{
-	margin-top: 20px;
+	margin-top: 10px;
 	text-align: center;
 }
 .host_car .left div a{
@@ -255,10 +237,10 @@ p{
 .from_group .select:before{
 	content: "";
 	width: 20px;
-	height: 38px;
+	height: 36px;
 	background: #FFFFFF;
 	position: absolute;
-	right: -1px;
+	right: 1px;
 	top:1px;
 }
 .from_group{
@@ -268,8 +250,7 @@ p{
 	content: "";
 	width: 10px;
 	height: 10px;
-	background: url(../img/arrow_down.png) no-repeat 0 0;
-	background-size: 100%;
+	background: url(../img/arrow_down.png?v=1.0) no-repeat 0 0;
 	position: absolute;
 	right: 5px;
 	top:15px;
@@ -279,6 +260,8 @@ p{
 	height: 38px;
 	text-indent: 5px;
 	border: 1px solid #EB6100;
+    padding:8px 0;
+    box-sizing:border-box;
 }
 .btn_orange{
 	display: inline-block;
@@ -291,6 +274,12 @@ p{
 	text-align: center;
 	font-size: 14px;
 	color: #FFFFFF;
+}
+a.btn_orange:link {
+        color: #FFFFFF;
+}
+a.btn_orange:visited {
+        color:#ffffff;
 }
 .btn_orange:hover{
 	background: #E0A74F;
@@ -501,6 +490,7 @@ p{
 	font-size: 14px;
 	font-weight: 600;
 	margin-top: 20px;
+    text-indent:10px;
 }
 .Carousel1 .top li img,.Carousel1 .bottom li img{
 	width: 130px;
@@ -549,17 +539,21 @@ p{
 	display: inline-block;
 	width:3px ;
 	height: 3px;
-	background: url(../img/dot_h.png) no-repeat 0 0;
-	background-size: 100%;
+	background: #b6b6b6;
+	border-radius:100%;
 	vertical-align: middle;
 	margin-right: 10px;
+    behavior: url(/Content/js/PIE.htc);
+    position:relative;
 }
 .dot_orange{
 	display: inline-block;
 	width:5px ;
 	height: 5px;
-	background: url(../img/dot.png) no-repeat 0 0;
-	background-size: 100%;
+	background: #e96100;
+	border-radius:100%;
+    behavior: url(/Content/js/PIE.htc);
+    position:relative;
 	vertical-align: middle;
 	margin-right: 10px;
 }
@@ -582,15 +576,17 @@ p{
 	margin-right: 10px;
 }
 .Carousel1 .item li:hover .dot,.nows .cont .left a:hover .dot,.nows .cont .center a:hover .dot,.nows .cont .right a:hover .dot{
-	background: url(../img/dot.png) no-repeat 0 0;
-	background-size: 100%;
+    background: #e96100;
+	border-radius:100%;
+	behavior: url(/Content/js/PIE.htc);
+    position:relative;
 }
 .Carousel1 .item li:hover a,.nows .cont .left a:hover,.nows .cont .center a:hover,.nows .cont .right a:hover{
 	color: #EB6100;
 }
-.tiao2 img{
+/*.tiao2 img{
 	width: 100%;
-}
+}*/
 /*新闻*/
 .nows .cont{
 	height: 680px;
@@ -624,7 +620,11 @@ p{
 	width: 208px;
 }
 .nows .cont img{
-	width: 100%;
+	width: 90%;
+    height:auto;
+    display:block;
+    margin:0 auto;
+    max-height:160px;
 }
 .img_top{
 	margin-bottom: 5px;
@@ -659,16 +659,23 @@ p{
 	border: 1px solid #EB6100;
 }
 .theme p span{
-	width: 320px;
-	height: 18px;
+	width: 380px;
+	height: 22px;
 	display: block;
-	margin: 10px auto 0;
-	background: url(../img/theme_title.png) no-repeat 0 0;
+	margin: 10px auto;
+    font-size: 15px;
+    text-align: center;
+    line-height: 22px;
+    color: #eb6100;
+    overflow:hidden;
+
+	/*background: url(../img/theme_title.png) no-repeat 0 0;*/
 	background-size: 100%;
 }
+
 .nows .cont .right .theme p span{
-	width: 120px;
-	background: url(../img/theme_title.png) no-repeat 0 0;
+	width: 180px;
+	/*background: url(../img/theme_title.png) no-repeat 0 0;*/
 	background-size: auto;
 }
 .nows .cont .right .theme li{
@@ -676,13 +683,13 @@ p{
 }
 .theme ul{
 	display: inline-block;
-	width: 200px;
+	width: 210px;
 }
 .theme ul li{
 	text-indent: 10px;
 }
 .nows .cont .right li{
-	text-align: center;
+	text-align: left;
 }
 
 /*测评*/
@@ -741,6 +748,7 @@ p{
 }
 .part .xia{
 	margin: 15px 10px 0;
+    text-align:left;
 	
 }
 .part .xia a{
@@ -758,9 +766,16 @@ p{
 	position: relative;
 	margin: 10px 30px 0;
 }
-.evaluation .cont .right .item img,.guide .cont .right .item img{
-	width: 100%;
-	border: 1px solid #EB6100;
+.evaluation .cont .right .item img, .guide .cont .right .item img{
+    max-width:273.5px;
+    max-height:150px;
+}
+.evaluation .cont .right .item .title_content,.guide .cont .right .item .title_content{
+	width: 99%;
+	border-bottom: 1px solid #EB6100;
+	border-left: 1px solid #EB6100;
+	border-right: 1px solid #EB6100;
+    text-align: center;
 }
 .title_cap{
 	position: absolute;
@@ -770,6 +785,7 @@ p{
 	height: 40px;
 	background: url(../img/biaotou_index.png) no-repeat 0 0;
 	background-size: 100%;
+    behavior: url(/Content/js/backgroundsize.htc);
 }
 .title_cap span{
 	color: #FFFFFF;
@@ -823,6 +839,7 @@ p{
 	margin-left: 5px;
 	background: url(../img/huan.png) no-repeat 0 0;
 	background-size: 100%;
+    behavior: url(/Content/js/backgroundsize.htc);
 }
 .guide .cont .left .item{
 	padding: 5px 10px 0;
@@ -902,21 +919,35 @@ ul.xia{
 .car_logo li img{
 	width: 100%;
 }
-.car_logo li:hover span{
+.car_logo li:hover a > span{
 	display: block;
 }
-.car_logo li span{
+.car_logo li a > span{
 	position: absolute;
-	top:-15px;
-	right:-30px;
-	width: 35px;
+	top:-25px;
+	left:10px;
+	/*width: 35px;*/
 	height:30px;
+    max-width:100px;
+    box-sizing:border-box;
+    padding:0 5px;
+    line-height:30px;
 	color: #FFFFFF;
 	text-align: center;
-	background: url(../img/dialog.png) no-repeat 0 0;
-	background-size: 100%;
-	display: none;
+	background: #e96100;
+    display: none;
+    white-space:nowrap;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    behavior:url(/Content/js/PIE.htc);
+	
 }
+    .car_logo li a > span span {
+        display:inline-block;
+        height:30px;
+        overflow:hidden;
+    }
 .more_title{
 	line-height: 40px;
 	margin: 0 30px;
@@ -982,12 +1013,10 @@ ul.xia{
 	height: 20px;
 	top:-1px;
 	left:-10px;
-	background: url(../img/ring.png) no-repeat 0 0;
-	background-size: 100% 100%;
+	background: url(../img/ring.png?v=1.0) no-repeat 0 0;
 }
 .use_car .cont li:hover .ring{
-	background: url(../img/ring_2.png) no-repeat 0 0;
-	background-size: 100% 100%;
+	background: url(../img/ring_2.png?v=1.0) no-repeat 0 0;
 }
 /*新车上市*/
 .new_car_market .cont{
@@ -1072,9 +1101,11 @@ ul.xia{
 	margin-top: 15px;
 }
 .new_car_market .center li img{
+    margin: 2px;
 	width: 200px;
 	vertical-align: middle;
 }
+
 .summary{
 	display: inline-block;
 	vertical-align: middle;
@@ -1093,6 +1124,15 @@ ul.xia{
 }
 .time_title span{
 	font-size: 16px;
+}
+.little-down {
+    display:block;
+    position:absolute;
+    left:10px;
+    bottom:-8px;
+    width:10px;
+    height:10px;
+    background:url(/Content/img/arrow_down.png) no-repeat 0 0;
 }
 .icon_time{
 	float: right;
@@ -1137,15 +1177,23 @@ ul.xia{
 .new_car_market .right .time_show{
 	position: absolute;
 	display: none;
-	width: 54px;
+	/*width: 54px;*/
 	height: 32px;
+    line-height:32px;
+    max-width:170px;
 	left:80px;
-	top:-30px;
-	padding-top: 10px;
-	background: url(../img/dialog.png) no-repeat 0 0;
-	background-size: 100%;
+	top:-37px;
+	background: #e96100;
+    border-radius:5px;
 	color: #FFFFFF;
+    box-sizing:border-box;
+    padding:0 5px;
 }
+    .new_car_market .right .time_show span {
+        display:inline-block;
+        height:100%;
+        overflow:hidden;
+    }
 .new_car_market .right li:hover .time_show{
 	display: block;
 }
@@ -1609,3 +1657,61 @@ a.print_left,a.print_right{
 .print_right{
 	right:0;
 }
+.list-hx{
+	position: relative;
+	width: 200px;
+	height: 582px;
+	overflow: hidden;
+}
+.list-hx >ul{
+	position: absolute;
+	top:0;
+	left: 0;
+
+}
+.list-hx >ul .item{
+	border-bottom: 1px solid #E96100;
+}
+.newstitle {
+    color: #F08400;
+    /* max-width: 120px; */
+    white-space: nowrap;
+    overflow: hidden;
+    /*text-overflow: ellipsis;*/
+}
+.subtitle {
+    /*white-space: nowrap;*/
+    overflow: hidden;
+    /*text-overflow: ellipsis;*/
+    text-align:left;
+}
+.parent-ad {
+    position:fixed;
+    width:1000px;
+    top:0;
+    left:50%;
+    margin-left:-500px;
+}
+.middle-3s-ad {
+    position:absolute;
+    top:70px;
+    left:50%;
+    margin-left:-500px;
+    width:1000px;
+    height:300px;
+    z-index:99;
+}
+    .middle-3s-ad a.btn-mark-close {
+        position:absolute;
+        top:10px;
+        right:10px;
+        color:#ffffff;
+    }
+        .middle-3s-ad a.btn-mark-close i {
+            color:#ffffff;
+            font-size:17px;
+        }
+    .middle-3s-ad img {
+        width:100%;
+        height:100%;
+    }

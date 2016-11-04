@@ -23,6 +23,12 @@ body{
 	z-index: 10000;
 	top:0;
 }
+    .head .main_side {
+        line-height: 70px;
+        color: #f4f4f4;
+        font-size: 18px;
+        font-weight: 200;
+    }
 .head .btn_group{
 	display: inline-block;
 	position: relative;
@@ -914,3 +920,30 @@ i.print_right{
 .dialog-nav .nr p {
     text-align:center;
 }
+.float-right-ad ,.float-left-ad{
+    width:200px;
+    position:absolute;
+    top:300px;
+    height:auto;
+    z-index:11;
+}
+    .float-right-ad img ,.float-left-ad img{
+        width:100%;
+    }
+.float-right-ad {
+    right:-205px;
+}
+.float-left-ad {
+    left:-205px;
+    text-align:right;
+}
+.float-right-ad p,.float-left-ad p{
+    height:20px;
+    line-height:20px;
+    font-size:12px;
+    padding:0 10px;
+    background:#f9f9f9;
+}
+    .float-right-ad p i ,.float-left-ad p i{
+        margin-right:5px;
+    }

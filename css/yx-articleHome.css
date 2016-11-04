@@ -3,6 +3,13 @@
 2016.10.17
 by dongxiao
 */
+/*
+font
+*/
+@font-face{
+    font-family: 'Glyphicons Halflings';
+    src: url(../fonts/glyphicons-halflings-regular.woff2);
+}
 /*articleHome*/
 .no-border{border: none}
 .text-over{text-overflow:ellipsis;overflow: hidden;white-space: nowrap;}
@@ -723,14 +730,3 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .ethhingCon .jingxuan .car_baikeList ul li p.classify{width: 70px;height: 20px;line-height: 20px;color: #ffffff;background: #eb6100;text-align: center;border-radius: 5px}
 .ethhingCon .jingxuan .car_baikeList ul li p.name {width: 260px;height: 20px;line-height: 20px;overflow: hidden;}
 .ethhingCon .jingxuan .car_baikeList ul li p.name a{display: inline-block;margin-left: 10px}
-
-/*首页3s 广告*/
-.middle-3s-ad {
-    position: absolute; 
-    top: 70px;
-    left: 50%;
-    margin-left: -500px;
-    width: 1000px;
-    height: 300px;
-    z-index: 99;
-}

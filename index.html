@@ -1798,14 +1798,65 @@
 		</div>
 		<!--end 内容 -->
 
-		<!-- 3s广告 -->
+		<!-- start 3s广告 -->
 		<div class="middle-3s-ad">
 		    <a class="btn-mark-close"><i class="glyphicon glyphicon-remove-circle"></i></a>
 		    <a target="_blank" href="/Ad/GoToAdUrl/112" title="暂无">
 		        <img src="http://ethingsadimg.oss-cn-qingdao.aliyuncs.com/1d36b1d0eb5b4e5f992d55aa16d67b23.jpg" alt="暂无" style="width: 1000px; height: 300px;max-height:300px">
 		    </a>
 		</div>
-		<!-- 3s广告 -->
+		<!-- end 3s广告 -->
+
+		<!-- start 左右两侧广告 -->
+		<div class="parent-ad">
+			<div class="float-right-ad">
+			    <a target="_blank" href="/Ad/GoToAdUrl/111" title="暂无">
+			        <img src="http://ethingsadimg.oss-cn-qingdao.aliyuncs.com/3242af9f6c0b4f50a50c5608bd8bf77f.jpg" alt="暂无" style="width: 200px; height: 345px;max-height:345px">
+			    </a>
+
+			    <p><a><i class="glyphicon glyphicon-remove"></i>关闭广告</a></p>
+			</div>
+			<div class="float-left-ad">
+			    <a target="_blank" href="/Ad/GoToAdUrl/111" title="暂无">
+			        <img src="http://ethingsadimg.oss-cn-qingdao.aliyuncs.com/3242af9f6c0b4f50a50c5608bd8bf77f.jpg" alt="暂无" style="width: 200px; height: 345px;max-height:345px">
+			    </a>
+
+			    <p><a><i class="glyphicon glyphicon-remove"></i>关闭广告</a></p>
+			</div>
+    	</div>
+		<!-- end 左右两侧广告 -->
+
+		
+		<!--start footer -->
+		<div class="footer">
+			<div class="wrapper">
+				<ul class="active">
+					<li><a href="#2">关于我们</a></li>
+					<li><a href="#2">加入我们</a></li>
+					<li><a href="#2">关注我们</a></li>
+					<li><a href="#2">帮助中心</a></li>
+					<li><a href="#2">网站条款</a></li>
+				</ul>
+				<ul>
+					<li><a href="#2">关于易行</a></li>
+					<li><a href="#2">加入易行</a></li>
+					<li><a href="#2">易行微信</a></li>
+					<li><a href="#2">用户体验中心</a></li>
+					<li><a href="#2">法律声明</a></li>
+				</ul>
+				<ul>
+					<li><a href="#2">会员手册</a></li>
+					<li><a href="#2">易行招聘</a></li>
+					<li><a href="#2">联系我们</a></li>
+					<li><a href="#2">在线咨询</a></li>
+					<li><a href="#2">服务协议</a></li>
+				</ul>
+				<p>版权所有：北京易行互动科技有限公司 电话：010-85072077 　© 2016 www.ething.net 京ICP证150082号 公网安备 11010802020186号<i class="icon_gaj"></i></p>
+			</div>
+		</div>
+		<!--end footer -->
+
+
 
 
 		<script type="text/javascript">
@@ -1848,7 +1899,13 @@
         	setInterval('autoScroll(".useCarScroll","-41px")',3000) 
         	setInterval('autoScroll(".use_car_scroll","-41px")',4000)  
 
-        	//3s广告
+        	//3s广告 & 左右固定广告
+        	$(".float-right-ad p a, .float-left-ad p a").click(function () {
+	            $(this).parent().parent().hide();
+	        });
+        	$(".middle-3s-ad a").click(function () {
+	            $(this).parent().hide();
+	        });
         	setTimeout(function () {
 	            $(".middle-3s-ad").hide();
 	        }, 3000);
