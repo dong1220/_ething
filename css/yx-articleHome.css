@@ -666,6 +666,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .ethhingCon .localCar .local_left .carCity .myCity .localName h6{font-size: 18px;font-weight: 600}
 .ethhingCon .localCar .local_left .carCity .myCity .localName p {margin-left: 5px}
 .ethhingCon .localCar .local_left .carCity .myCity .localName p span a{padding: 0 3px 0 3px;;color: #999999}
+.ethhingCon .localCar .local_left .carCity .myCity .localName p span a:hover{padding: 0 3px 0 3px;;color: #eb6100}
 .ethhingCon .localCar .local_left .carCity .myCity .otherCity a{display: inline-block;padding:0 10px;border-right: 1px solid #cccccc;font-size: 14px;height: 15px;line-height: 15px}
 .ethhingCon .localCar .local_left .carCity .myCity .otherCity a.moreCity{border:none;color: #eb6100}
 .ethhingCon .localCar .local_left .hotCarCity{width: 619px;border-top: 1px solid #ededed;border-left: 1px solid #ededed;}
