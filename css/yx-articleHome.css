@@ -500,8 +500,9 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .indexCnterCon .smallCarousel .pogoSlider-nav-btn{background: #cccccc;border-radius: 0;box-shadow: none;}
 .indexCnterCon .smallCarousel .pogoSlider-nav-btn--selected{background: #eb6100;box-shadow: none;}
 .indexCnterCon .smallCarousel .pogoSlider--navBottom .pogoSlider-nav li,.indexCnterCon .smallCarousel .pogoSlider--navTop .pogoSlider-nav li{margin: 0 4px}
-.indexCnterCon .smallCarousel a.title{display: block;width: 340px;height: 40px;line-height: 40px;background: #dc5b01;opacity: .7;color: #ffffff;text-align: center;position: absolute;top:190px;font-size: 16px;overflow: hidden;}
-.indexCnterCon .left .newsList li{width: 50%;float: left;overflow: hidden;line-height: 25px}
+.indexCnterCon .smallCarousel a.title{display: block;width: 340px;height: 40px;line-height: 40px;background: url(../img/P_bg.png) repeat-x ;background-size:40px;color: #ffffff;text-align: center;position: absolute;top:190px;font-size: 16px;overflow: hidden;}
+.indexCnterCon .smallCarousel a.title:hover{background: url(../img/bg-70.png) repeat-x;background-size: 40px}
+.indexCnterCon .left .newsList li{width: 50%;float: left;overflow: hidden;line-height: 25px; white-space: nowrap;}
 .indexCnterCon .left .newsList li a{font-size: 14px;}
 .indexCnterCon .left p.line{width: 100%;height: 1px;background: #dddddd;margin: 10px 0}
 .indexCnterCon .left .recommend h3{font-size: 16px;font-weight: 600}
@@ -555,9 +556,11 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .ethhingCon .chooseCar .chooseLeft .new_car{width: 330px;padding:13px;border:1px solid #dddddd;margin: 20px 20px 0 0;position: relative; }
 .ethhingCon .chooseCar .chooseLeft .new_car p.fixName{width: 70px;height: 30px;line-height: 30px;color: #ffffff;position: absolute;top:0;right: 0;background: #eb6100;z-index: 99;text-align: center;font-size: 16px}
 .ethhingCon .chooseCar .chooseLeft .new_car .new_car_img{position: relative;}
-.ethhingCon .chooseCar .chooseLeft .new_car .new_car_img p.title{position: absolute;width: 100%;line-height: 30px;height: 30px;text-align: center;bottom: 0;}
+.ethhingCon .chooseCar .chooseLeft .new_car .new_car_img p.title{position: absolute;width: 100%;line-height: 30px;height: 30px;text-align: center;bottom: 0;background: url(../img/P_bg.png) repeat-x;background-size: 30px;}
 .ethhingCon .chooseCar .chooseLeft .new_car .new_car_img p.title a{color: #ffffff;font-size: 14px;font-weight: 600}
-.ethhingCon .chooseCar .chooseLeft .new_car .new_car_img p.titleBox{background: #eb6100;opacity: .7}
+.ethhingCon .chooseCar .chooseLeft .new_car .new_car_img p.title:hover{background: url(../img/bg-70.png) repeat-x;background-size: 30px}
+/*.ethhingCon .chooseCar .chooseLeft .new_car .new_car_img p.titleBox{background: #0a0813;opacity: .5}
+.ethhingCon .chooseCar .chooseLeft .new_car .new_car_img p.title:hover{background-color: #eb6100;opacity: .8}*/
 .ethhingCon .chooseCar .chooseLeft .new_car .carIntroList{margin: 0}
 .ethhingCon .chooseCar .chooseLeft .new_car .carIntroList li{width: 300px}
 .ethhingCon .chooseCar .chooseRight{width: 240px}
@@ -572,19 +575,25 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .ethhingCon .useCar .use_bottom .show_car_list ul li p.title,
 .ethhingCon .localCar .local_right .local_img_list ul li p.title,
 .ethhingCon .jingxuan .drivingList ul li p.title
- {position: absolute;width: 100%;line-height: 30px;height: 30px;text-align: center;bottom: 0;}
+ {position: absolute;width: 100%;line-height: 30px;height: 30px;text-align: center;bottom: 0;background: url(../img/P_bg.png) repeat-x;background-size: 40px}
 .ethhingCon .easyBuy .easyLeft .easy_img_1 p.title a,
 .ethhingCon .useCar .use_left .use_img  p.title a,
 .ethhingCon .useCar .use_bottom .show_car_list ul li p.title a,
 .ethhingCon .localCar .local_right .local_img_list ul li p.title a,
 .ethhingCon .jingxuan .drivingList ul li p.title a
 {color: #ffffff;font-size: 14px;font-weight: 600}
-.ethhingCon .easyBuy .easyLeft .easy_img_1 p.titleBox,
+.ethhingCon .easyBuy .easyLeft .easy_img_1 p.title:hover,
+.ethhingCon .useCar .use_left .use_img  p.title:hover,
+.ethhingCon .useCar .use_bottom .show_car_list ul li p.title:hover,
+.ethhingCon .localCar .local_right .local_img_list ul li p.title:hover,
+.ethhingCon .jingxuan .drivingList ul li p.title:hover
+{background: url(../img/bg-70.png) repeat-x;background-size: 40px}
+/*.ethhingCon .easyBuy .easyLeft .easy_img_1 p.titleBox,
 .ethhingCon .useCar .use_left .use_img p.titleBox,
 .ethhingCon .useCar .use_bottom .show_car_list ul li p.titleBox,
 .ethhingCon .localCar .local_right .local_img_list ul li p.titleBox,
 .ethhingCon .jingxuan .drivingList ul li p.titleBox
-{background: #eb6100;opacity: .7}
+{background: #eb6100;opacity: .7}*/
 .ethhingCon .easyBuy .easyLeft .easy_img_2 {margin-top: 1px}
 .ethhingCon .easyBuy .easyLeft .easy_img_2 p.title{height: 20px;line-height: 20px;overflow: hidden;}
 .ethhingCon .easyBuy .easyLeft .easy_img_2 p.title a{font-size: 12px}
@@ -656,7 +665,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 {display:block;width: 500px;height: 41px;line-height: 40px;text-align: center;color: #eb6100;font-weight: 600;border:none;}
 .ethhingCon .localCar .local_left .carCity .myCity .localName h6{font-size: 18px;font-weight: 600}
 .ethhingCon .localCar .local_left .carCity .myCity .localName p {margin-left: 5px}
-.ethhingCon .localCar .local_left .carCity .myCity .localName p span{padding: 0 3px 0 3px;;color: #999999}
+.ethhingCon .localCar .local_left .carCity .myCity .localName p span a{padding: 0 3px 0 3px;;color: #999999}
 .ethhingCon .localCar .local_left .carCity .myCity .otherCity a{display: inline-block;padding:0 10px;border-right: 1px solid #cccccc;font-size: 14px;height: 15px;line-height: 15px}
 .ethhingCon .localCar .local_left .carCity .myCity .otherCity a.moreCity{border:none;color: #eb6100}
 .ethhingCon .localCar .local_left .hotCarCity{width: 619px;border-top: 1px solid #ededed;border-left: 1px solid #ededed;}
@@ -713,7 +722,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .ethhingCon .jingxuan .comRanking .biaoti{padding: 10px 0 15px;border-bottom: 1px solid #dddddd}
 .ethhingCon .jingxuan .comRanking .biaoti h4{font-size: 17px;line-height: 30pxl;font-weight: 600;height: 20px;padding-left: 10px;border-left: 5px solid #eb6100}
 .ethhingCon .jingxuan .comRanking .articleList{width: 278px;border:1px solid #dddddd;margin-right: 10px}
-.ethhingCon .jingxuan .comRanking .articleList p{font-size: 22px;padding: 10px 0 0 10px;}
+.ethhingCon .jingxuan .comRanking .articleList p a{display:block;font-size: 22px;padding: 10px 0 0 10px;}
 .ethhingCon .jingxuan .comRanking .articleList .rankList{background: #ffffff;padding: 5px 0;}
 .ethhingCon .jingxuan .comRanking .articleList .rankList li a{width: 245px}
 .ethhingCon .jingxuan .comRanking .articleList .rankList li span.number{margin: 9px 10px 0 10px;}
@@ -727,6 +736,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .ethhingCon .jingxuan .comRanking .vedioList{width: 178px;margin-right: 0}
 .ethhingCon .jingxuan .comRanking .vedioList .rankList li a{width: 140px}
 .ethhingCon .jingxuan .car_baikeList ul li{width: 33%;float: left;font-size: 12px;margin-top: 15px}
-.ethhingCon .jingxuan .car_baikeList ul li p.classify{width: 70px;height: 20px;line-height: 20px;color: #ffffff;background: #eb6100;text-align: center;border-radius: 5px}
+.ethhingCon .jingxuan .car_baikeList ul li p.classify a{display:block;width: 70px;height: 20px;line-height: 20px;color: #ffffff;background: #eb6100;text-align: center;border-radius: 5px}
+.ethhingCon .jingxuan .car_baikeList ul li p.classify a:hover{background: #ce5704;}
 .ethhingCon .jingxuan .car_baikeList ul li p.name {width: 260px;height: 20px;line-height: 20px;overflow: hidden;}
 .ethhingCon .jingxuan .car_baikeList ul li p.name a{display: inline-block;margin-left: 10px}
