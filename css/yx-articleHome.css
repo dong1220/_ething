@@ -3,26 +3,25 @@
 2016.10.17
 by dongxiao
 */
-/*
-font
-*/
+/*font*/
 @font-face{
     font-family: 'Glyphicons Halflings';
     src: url(../fonts/glyphicons-halflings-regular.woff2);
 }
-/*articleHome*/
 .no-border{border: none}
 .text-over{text-overflow:ellipsis;overflow: hidden;white-space: nowrap;}
 .footer{position: relative;z-index: 9999}
 i{display: inline-block;}
 i.square{width: 5px;height: 5px;background: #cccccc}
+ul{margin: 0}
+/*articleHome*/
 .meau{height: 40px}
 .meau ul li{width: 76px;float: left;border-left:1px solid #ce5b0a;text-align: center;line-height: 40px;font-size: 18px}
 .meau ul li:first-child{border:none;}
-.meau ul li  a{display:block;color:#ffffff;background: #eb6100;padding-left: 1px}
-.meau ul li a:hover{background: #ce5704}
+.meau ul li a{display:block;color:#ffffff;background: #eb6100;padding-left: 1px}
+.meau ul li a:hover,.meau ul li a.active{background: #ce5704}
 .mainCon {overflow: hidden;}
-.mainCon .crumbs{font-size: 13px;font-family: "宋体"}
+.mainCon .crumbs{font-size: 14px;font-family: "黑体"}
 .mainCon .crumbs p{color: #111111;}
 .mainCon .crumbs .breadcrumb{padding: 0;margin: 0;background: none;}
 .mainCon .crumbs .breadcrumb>li+li:before {content: ">";color: #eb6100}
@@ -33,10 +32,17 @@ i.square{width: 5px;height: 5px;background: #cccccc}
 .articleCarousel .carousel-indicators .active{background: #eb6100;width: 10px;height: 10px}
 .articleCarousel .carousel-indicators li{background: #cccccc;margin: 0}
 .articleCarousel .carousel-control{width: 40px;}
-.articleCarousel .carousel-control i{display:none;width: 40px;height: 90px;background: url(../img/icon_next_pre.png) no-repeat;position: absolute;top: 180px;}
-.articleCarousel a.right i{right: 0px;}
-.articleCarousel a.left i{left: 0px;background-position: -40px 0;}
-.articleCarousel .carousel-control{background: none}
+.articleCarousel .carousel-control i,
+.right_carousel .carousel-control i
+{display:none;width: 40px;height: 90px;background: url(../img/icon_next_pre.png) no-repeat;position: absolute;top: 180px;}
+.articleCarousel a.right i,
+.right_carousel a.right i{right: 0px;}
+.articleCarousel a.left i,
+.right_carousel a.left i
+{left: 0px;background-position: -40px 0;}
+.articleCarousel .carousel-control,
+.right_carousel .carousel-control
+{background: none}
 /*浮动二维码*/
 .fixCode{position: fixed;top:80px;right: 5px}
 /*热门文章*/
@@ -258,7 +264,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .vedioParam .img_car a{display: inline-block;width: 289px;height: 175px;overflow: hidden;}
 .vedioParam .parameter .tabMeau a{display:block;width: 105px;border-left: 1px solid #cccccc;line-height: 40px;border-bottom: 1px solid #dddddd;height: 38px;text-align: center;float: left;font-size: 14px;background-color: #f5f5f5}
 .vedioParam .parameter .tabMeau a:hover,.vedioParam .parameter .tabMeau a.active,.paramCon .carSelect a:hover,.paramCon .carSelect a.active{background-color: #dddddd;color:#eb6100}
-.paramCon{width: 384px;margin: 0 20px}
+.paramCon{width: 384px;padding: 0 20px}
 .paramCon p{line-height: 25px}
 .paramCon .ethingPrice{line-height: 45px;border-bottom: 1px solid #dddddd;color: #eb6100;font-size: 18px}
 .paramCon p big{font-size: 15px}
@@ -474,10 +480,10 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .searchBar .findCar {width: 320px;padding:0;background: none}
 .searchBar .findCar .carBrand{width: 143px;float: left;margin-right: 15px;margin-top: 15px;height: 28px;line-height: 30px;}
 .searchBar .findCar .carBrand input{width: 115px;font-size: 14px;margin-top: 3px;}
-.searchBar .searchBox{width: 298px;height: 28px;border:1px solid #eb6100;}
-.searchBar .searchBox input{display: block;width: 240px;line-height: 28px;outline: none;padding-left: 10px;font-size: 14px}
+.searchBar .searchBox,.carDetailCon .searchBox{width: 298px;height: 28px;border:1px solid #eb6100;}
+.searchBar .searchBox input,.carDetailCon .searchBox input{display: block;width: 240px;line-height: 28px;outline: none;padding-left: 10px;font-size: 14px}
 .searchBar .searchBox .btnBox{widows: 50px;height: 28px;background: #eb6100}
-.searchBar .searchBox button.searcnBtn{width: 20px;height: 20px;background: url(../img/icon_tips.png) no-repeat -40px 0;margin: 4px 12px;}
+.searchBar .searchBox button.searcnBtn,.carDetailCon .searchBox button.searcnBtn{width: 20px;height: 20px;background: url(../img/icon_tips.png) no-repeat -40px 0;margin: 4px 12px;}
 .searchBar .navList{width: 340px;padding-left: 19px;border-left: 1px solid #cccccc;line-height: 30px;margin-top: 15px;margin-left: 20px}
 .searchBar .navList a{display: block;width: 100px;background: #eb6100;color: #ffffff;text-align: center;float: left;font-size: 15px}
 .searchBar .navList a:hover{background: #ce5704;}
@@ -574,19 +580,22 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .ethhingCon .useCar .use_left .use_img  p.title,
 .ethhingCon .useCar .use_bottom .show_car_list ul li p.title,
 .ethhingCon .localCar .local_right .local_img_list ul li p.title,
-.ethhingCon .jingxuan .drivingList ul li p.title
+.ethhingCon .jingxuan .drivingList ul li p.title,
+.latestWen .img_box p.title
  {position: absolute;width: 100%;line-height: 30px;height: 30px;text-align: center;bottom: 0;background: url(../img/P_bg.png) repeat-x;background-size: 40px}
 .ethhingCon .easyBuy .easyLeft .easy_img_1 p.title a,
 .ethhingCon .useCar .use_left .use_img  p.title a,
 .ethhingCon .useCar .use_bottom .show_car_list ul li p.title a,
 .ethhingCon .localCar .local_right .local_img_list ul li p.title a,
-.ethhingCon .jingxuan .drivingList ul li p.title a
+.ethhingCon .jingxuan .drivingList ul li p.title a,
+.latestWen .img_box p.title a
 {color: #ffffff;font-size: 14px;font-weight: 600}
 .ethhingCon .easyBuy .easyLeft .easy_img_1 p.title:hover,
 .ethhingCon .useCar .use_left .use_img  p.title:hover,
 .ethhingCon .useCar .use_bottom .show_car_list ul li p.title:hover,
 .ethhingCon .localCar .local_right .local_img_list ul li p.title:hover,
-.ethhingCon .jingxuan .drivingList ul li p.title:hover
+.ethhingCon .jingxuan .drivingList ul li p.title:hover,
+.latestWen .img_box p.title:hover
 {background: url(../img/bg-70.png) repeat-x;background-size: 40px}
 /*.ethhingCon .easyBuy .easyLeft .easy_img_1 p.titleBox,
 .ethhingCon .useCar .use_left .use_img p.titleBox,
@@ -666,7 +675,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .ethhingCon .localCar .local_left .carCity .myCity .localName h6{font-size: 18px;font-weight: 600}
 .ethhingCon .localCar .local_left .carCity .myCity .localName p {margin-left: 5px}
 .ethhingCon .localCar .local_left .carCity .myCity .localName p span a{padding: 0 3px 0 3px;;color: #999999}
-.ethhingCon .localCar .local_left .carCity .myCity .localName p span a:hover{padding: 0 3px 0 3px;;color: #eb6100}
+.ethhingCon .localCar .local_left .carCity .myCity .localName p span a:hover{color: #eb6100}
 .ethhingCon .localCar .local_left .carCity .myCity .otherCity a{display: inline-block;padding:0 10px;border-right: 1px solid #cccccc;font-size: 14px;height: 15px;line-height: 15px}
 .ethhingCon .localCar .local_left .carCity .myCity .otherCity a.moreCity{border:none;color: #eb6100}
 .ethhingCon .localCar .local_left .hotCarCity{width: 619px;border-top: 1px solid #ededed;border-left: 1px solid #ededed;}
@@ -741,3 +750,109 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .ethhingCon .jingxuan .car_baikeList ul li p.classify a:hover{background: #ce5704;}
 .ethhingCon .jingxuan .car_baikeList ul li p.name {width: 260px;height: 20px;line-height: 20px;overflow: hidden;}
 .ethhingCon .jingxuan .car_baikeList ul li p.name a{display: inline-block;margin-left: 10px}
+
+/*车辆详情*/
+.carDetailCon .crumbs{width: 50%}
+.carDetailCon .searchBox{width: 250px;border-radius: 5px}
+.carDetailCon .searchBox input {width: 210px;margin-left: 10px;padding:0;}
+.carDetailCon .searchBox button.searcnBtn {background-position: -20px 0;margin: 4px}
+.carDetailCon .meau ul li{width: 142px;border-color: #dddddd}
+.carDetailCon .carInfo{overflow: hidden;margin: 20px 0 0}
+.carDetailCon .carInfo .pic_car{width: 300px;height: 300px;}
+
+.top_slide_wrap{width:300px;height:280px;margin:0 auto;position:relative}
+.top_slide_wrap .bx-wrapper{overflow:hidden}
+.top_slide_wrap .bx-wrapper ul.slide_box{height:200px;position:relative;overflow:hidden;z-index:4}
+.top_slide_wrap .bx-wrapper ul.slide_box li{position:absolute;width:300px;height:200px;left:0;top:0;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;-ms-transition:all .3s ease-out;-o-transition:all .3s ease-out;transition:all .3s ease-out}
+.top_slide_wrap .bx-wrapper ul.slide_box li a{color:#fff;display:block;cursor:pointer}
+.top_slide_wrap .bx-wrapper ul.slide_box li a img{width:300px;height:200px}
+.top_slide_wrap .bx-wrapper ul.slide_box li a:hover{text-decoration:none}
+.top_slide_wrap .bx-wrapper ul.slide_box li p{height:55px;line-height:55px;margin-top:-173px;padding:0 20px;text-overflow:ellipsis;-o-text-overflow:ellipsis;-ms-text-overflow:ellipsis;white-space:nowrap;overflow:hidden;width:100%;word-wrap:normal;width:650px;color:#fff;font-size:24px}
+.top_slide_wrap .bx-wrapper ul.bx-controls{overflow:hidden;*zoom:1;position:relative;z-index:5;padding:0; margin: 12px 0 0 -10px;}
+.top_slide_wrap .bx-wrapper ul.bx-controls li{float:left;position:relative;width:92px;height:64px;margin-left:11px}
+.top_slide_wrap .bx-wrapper ul.bx-controls li a{display:block;height:88px;height:60px;border:1px solid #ffffff}
+.top_slide_wrap .bx-wrapper ul.bx-controls li a.actives{border:1px solid #eb6100}
+.top_slide_wrap .bx-wrapper ul.bx-controls li img{width:88px;height:58px;margin: 1px;}
+.top_slide_wrap .bx-wrapper ul.bx-controls li span{position: absolute;background: #eb6100;color: #ffffff;display: inline-block;width: 30px;height: 15px;line-height: 15px;left: 2px;bottom: 4px;font-size: 12px;text-align: center;}
+
+.carDetailCon .carInfo .middle_info {border-right: 1px solid #dddddd}
+.carDetailCon .carInfo .middle_info .paramCon .carSelect{width: 378px}
+.carDetailCon .carInfo .middle_info .paramCon .carSelect a{background: #ededed;width: 125px}
+.carDetailCon .carInfo .middle_info .car_cuts{width: 374px;overflow: hidden;border:1px solid #dddddd;border-left: 3px solid #eb6100;margin:10px 0 0 20px}
+.carDetailCon .carInfo .middle_info .car_cuts .add{width: 90px;height:92px;text-align: center;border-right: 1px solid #dddddd}
+.carDetailCon .carInfo .middle_info .car_cuts .add a{display: block;font-size: 14px}
+.carDetailCon .carInfo .middle_info .car_cuts .add a.city{padding-top: 25px;color: #eb6100}
+.carDetailCon .carInfo .middle_info .car_cuts .add a.city i{border-top:5px solid #eb6100;border-bottom:5px solid transparent; border-left: 5px solid transparent;border-right: 5px solid transparent;vertical-align: middle;
+    margin: 5px 0 0 5px;}
+.carDetailCon .carInfo .middle_info .car_cuts .cuts_list{width: 282px}
+.carDetailCon .carInfo .middle_info .car_cuts .cuts_list ul{margin:0;}
+.carDetailCon .carInfo .middle_info .car_cuts .cuts_list ul li{margin: 0 10px;line-height: 30px;border-bottom: 1px solid #dddddd;overflow: hidden;font-size: 12px}
+.carDetailCon .carInfo .middle_info .car_cuts .cuts_list ul li:last-child{border-bottom: none}
+.carDetailCon .carInfo .middle_info .car_cuts .cuts_list ul li span{display:inline-block;background: url(../img/icon_reduce.png) no-repeat 0 9px;padding-left: 12px;color: #0ea540}
+.carDetailCon .carInfo .right_carousel{width: 257px;height: 275px}
+.carDetailCon .carInfo .right_carousel .carousel-inner img{width: 257px;height: 275px}
+.carDetailCon .carInfo .right_carousel .carousel-indicators{width: auto;bottom: 0;left: auto;right: 10px}
+.carDetailCon .carInfo .right_carousel .carousel-indicators li{border-radius: 0;margin: 0 1px}
+.carDetailCon .carInfo .right_carousel .carousel-indicators .active{width: 10px;height: 10px;background-color: #eb6100;border-color: #eb6100}
+.carDetailCon .carInfo .right_carousel .carousel-control i{top: 90px}
+
+/*最新新闻*/
+.carDetailCon .latestWen .name{line-height: 36px}
+.carDetailCon .latestWen .name h3{font-size: 18px;font-weight: 600}
+.carDetailCon .latestWen .name a{font-size: 14px}
+.carDetailCon .latestWen .name a span{color: #eb6100}
+.carDetailCon .latestWen .img_box{position: relative;margin-right: 20px}
+.carDetailCon .latestWen .img_box p.title{position: absolute;bottom: 0;left: 0}
+.carDetailCon .latestWen .news_list{width: 600px;padding-left: 19px;border-left: 1px solid #ededed;}
+.carDetailCon .latestWen .news_list .biaoti{background: url(../img/bg_nav_bar.png) repeat-x;line-height: 41px;height:41px;overflow:hidden;text-align: center; }
+.carDetailCon .latestWen .news_list .biaoti a{font-size: 16px;color: #eb6100}
+.carDetailCon .latestWen .news_list .biaoti a:hover{color: #ce5704}
+.carDetailCon .latestWen .list_con ul li {line-height: 29px;overflow: hidden;}
+.carDetailCon .latestWen .list_con ul li h5{color: #999999;font-size: 16px;height: 18px;padding-right: 10px;border-right: 1px solid #cccccc;margin: 5px 0 0 0}
+.carDetailCon .latestWen .list_con ul li h5 i{vertical-align: middle;margin: -2px 7px 0 0}
+.carDetailCon .latestWen .list_con ul li a{font-size: 14px}
+.carDetailCon .latestWen .list_con ul li p{float: left;width: 262px;margin-left: 10px}
+.carDetailCon .latestWen .list_con ul li span{color: #999999;}
+.carDetailCon .hotSales .left_con {width: 760px;padding-right: 20px;border-right: 1px solid #dddddd}
+.carDetailCon .hotSales .left_con .list_con .heading{height: 40px;line-height: 40px;background: #f5f5f5;border-bottom: 1px solid #dddddd}
+.carDetailCon .hotSales .left_con .list_con .heading h4{font-size: 16px;font-weight: 600;line-height: 40px;width: 290px}
+.carDetailCon .hotSales .left_con .list_con .heading b,.carDetailCon .hotSales .left_con .list_con .com_ing span{display: inline-block;width: 100px;text-align: center;font-size: 16px;}
+.carDetailCon .hotSales .left_con .list_con .com_ing .h_name{width: 290px;text-align: left;}
+.carDetailCon .hotSales .left_con .list_con .com_ing {height: 30px;line-height: 30px;border-bottom: 1px solid #dddddd;font-size: 14px;color: #666666}
+.carDetailCon .hotSales .left_con .list_con .com_ing span{font-size: 14px}
+.carDetailCon .hotSales .left_con .list_con .com_ing a.box{display: inline-block;width: 50px;height:20px;border-radius: 5px;background: #EB6100;color: #ffffff;text-align: center;line-height: 20px;margin: 5px 0 0 25px;font-size: 12px}
+
+.carDetailCon .hotSales .right_con .img_list{margin-top:-10px;width: 200px }
+.carDetailCon .hotSales .right_con .img_list ul li{float: left;margin-top: 10px;width: 200px;height: 140px;overflow: hidden;}
+
+.carDetailCon .carPhoto .pic_nav{background: #ededed;margin: 10px auto;overflow: hidden;}
+.carDetailCon .carPhoto .pic_nav a{display: block;float: left;width: 20%;text-align: center;line-height: 40px;font-size: 14px}
+.carDetailCon .carPhoto .pic_nav a:hover,.carDetailCon .carPhoto .pic_nav a.active{color: #eb6100;font-size: 16px}
+.carDetailCon .carPhoto .pic_box{border:1px solid #eb6100;overflow: hidden;}
+.carDetailCon .carPhoto .pic_box img,
+.carDetailCon .hotSales .right_con .img_list ul li img{transition: 1s}
+.carDetailCon .carPhoto .pic_box .left_pic{width: 398px}
+.carDetailCon .carPhoto .pic_box .left_pic .top{position: relative;width: 398px;height: 256px;overflow: hidden; }
+.carDetailCon .carPhoto .pic_box .left_pic .top span{position: absolute; left: 0;bottom: 0;display: block;width: 80px;height: 50px;line-height: 50px;background: #eb6100;color: #ffffff;font-size: 22px;text-align: center;}
+.carDetailCon .carPhoto .pic_box .left_pic .bottom{border-top:2px solid #eb6100;}
+.carDetailCon .carPhoto .pic_box .right_pic{width: 600px}
+.carDetailCon .carPhoto .pic_box .right_pic ul{margin-top: -2px;}
+.carDetailCon .carPhoto .pic_box .right_pic ul li{width: 198px;height:170px;float:left;border-left: 2px solid #eb6100;border-top: 2px solid #eb6100;overflow: hidden;position: relative;}
+.carDetailCon .carPhoto .pic_box .left_pic .top img:hover,
+.carDetailCon .carPhoto .pic_box .right_pic ul li img:hover,
+.carDetailCon .hotSales .right_con .img_list ul li img:hover{transform: scale(1.2);}
+.carDetailCon .carPhoto .pic_box .right_pic ul li p.mask{width: 100%;height: 100%;background: #000;opacity: .7;position: absolute;left: 0;top:0;color: #ffffff;text-align: center;}
+.carDetailCon .carPhoto .pic_box .right_pic ul li p.mask b{display: block;font-size: 36px;padding: 40px 0 5px;font-family: "黑体"}
+.carDetailCon .carPhoto .pic_box .right_pic ul li p.mask a{display: block;font-size: 16px;color: #ffffff}
+.carDetailCon .carPhoto .pic_box .right_pic ul li p.mask a:hover{color: #ecebeb}
+
+.dealerRecom ul.dealerList li{width: 30.3%;padding:15px 3% 15px 0;float: left;border-bottom: 1px solid #dddddd;}
+.dealerRecom ul.dealerList li h5{font-size: 16px;font-weight: 500;padding-bottom: 10px;color: #333333}
+.dealerRecom ul.dealerList li p {font-size: 13px;line-height: 20px;color: #666666;overflow: hidden;}
+.dealerRecom ul.dealerList li p span{display: inline-block;}
+.dealerRecom ul.dealerList li p span a{color: #eb6100}
+.dealerRecom ul.dealerList li p span.address{width: 60px;}
+.dealerRecom ul.dealerList li p span.address i{width: 15px;height: 15px;background: url(../img/icon_address.png) no-repeat;background-size: 30px 15px;vertical-align: middle;margin-right: 6px;margin:-2px 6px 0 0;}
+.dealerRecom ul.dealerList li p span.addCon{width: 243px}
+.dealerRecom ul.dealerList li p span.tel i{background-position: -15px 0}
+.dealerRecom ul.dealerList li  a.cuxiao{display: block;font-size: 14px;padding-top: 10px}
