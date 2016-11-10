@@ -134,9 +134,396 @@
 			<div class="mt10 overflow_h">
 				<!--start 左部分 -->
 				<div class="fl hotArticle distrInfo">
-					<div class="title fl">
+					<div class="title fl" style="position: relative;">
 						<big>北京经销商</big> 
-						<a>【切换】</a>
+						<a id="qiehuan">【切换】</a>
+						<!-- start 城市选择弹框 citySelectPop -->
+						<div class="citySelectPop" id="citySelectPop">
+							<div class="hot_city_pop">
+								<div class="city_search fl">
+									<i class="icon_search fl"></i>
+									<input type="text" class="fl" placeholder="请输入城市名"></input>
+								</div>
+								<div class="hot_list fl" >
+									<a href="">全国</a>
+									<a href="">北京</a>
+									<a href="">上海</a>
+									<a href="">南京</a>
+									<a href="">杭州</a>
+									<a href="">广州</a>
+									<a href="">深圳</a>
+								</div>
+							</div> <!-- hot_city_pop -->
+							<div class="letterList" id="letterList">
+								<a href="" class="active" id="a">A</a>
+								<a href="" id="f">F</a>
+								<a href="" id="g">G</a>
+								<a href="" id="h">H</a>
+								<a href="" id="j">J</a>
+								<a href="" id="l">L</a>
+								<a href="" id="n">N</a>
+								<a href="" id="q">Q</a>
+								<a href="" id="s">S</a>
+								<a href="" id="x">X</a>
+								<a href="" id="y">Y</a>
+								<a href="" id="z">Z</a>
+							</div> <!-- 字母列表 -->
+							<div class="city_list_pop" id="divJumpContent">
+								<dl class="bg_gray no_top_border">
+									<dt class=""><span>直辖市：</span></dt>
+									<dd>
+										<a class="" href="">北京</a>
+	                                    <a class="" href="">天津</a>
+	                                    <a class="" href="">上海</a>
+	                                    <a class="" href="">重庆</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt class="">
+										<span class="letter fl" data-letter="A" id="A">A</span>
+										<span class="fr">安微：</span>
+									</dt>
+									<dd>
+										<a class="" href="">合肥</a>
+	                                    <a class="" href="">芜湖</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+	                                    <a class="" href="">合肥</a>
+	                                    <a class="" href="">芜湖</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+	                                   
+									</dd>
+									<dt>
+										<span class="fr">澳门：</span>
+									</dt>
+									<dd>
+										<a href="" class="disabled">澳门</a>
+									</dd>
+								</dl>
+								<dl class="bg_gray">
+									<dt class="">
+										<span class="letter fl" data-letter="F" id="F">F</span>
+										<span class="fr">福建：</span>
+									</dt>
+									<dd>
+										<a class="" href="">合肥</a>
+	                                    <a class="" href="">芜湖</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+									</dd>
+								</dl>
+								<dl class="">
+									<dt class="">
+										<span class="letter fl" data-letter="G" id="G">G</span>
+										<span class="fr">广州：</span>
+									</dt>
+									<dd>
+										<a class="" href="">合肥</a>
+	                                    <a class="" href="">芜湖</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+									</dd>
+									<dt class="">
+										
+										<span class="fr">广西：</span>
+									</dt>
+									<dd>
+										<a class="" href="">合肥</a>
+	                                    <a class="" href="">芜湖</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+									</dd>
+								</dl>
+								<dl class="bg_gray">
+									<dt class="">
+										<span class="letter fl" data-letter="H" id="H">H</span>
+										<span class="fr">河南：</span>
+									</dt>
+									<dd>
+										<a class="" href="">合肥</a>
+	                                    <a class="" href="">芜湖</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+									</dd>
+									<dt class="">
+										<span class="fr">河北：</span>
+									</dt>
+									<dd>
+										<a class="" href="">合肥</a>
+	                                    <a class="" href="">芜湖</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+									</dd>
+								</dl>
+								<dl class="">
+									<dt class="">
+										<span class="letter fl" data-letter="J" id="J">J</span>
+										<span class="fr">江西：</span>
+									</dt>
+									<dd>
+										<a class="" href="">合肥</a>
+	                                    <a class="" href="">芜湖</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+									</dd>
+									<dt class="">
+										<span class="fr">吉林：</span>
+									</dt>
+									<dd>
+										<a class="" href="">合肥</a>
+	                                    <a class="" href="">芜湖</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+									</dd>
+								</dl>
+								<dl class="bg_gray">
+									<dt class="">
+										<span class="letter fl" data-letter="L" id="L">L</span>
+										<span class="fr">辽宁：</span>
+									</dt>
+									<dd>
+										<a class="" href="">合肥</a>
+	                                    <a class="" href="">芜湖</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt class="">
+										<span class="letter fl" data-letter="N" id="N">N</span>
+										<span class="fr">内蒙古：</span>
+									</dt>
+									<dd>
+										<a class="" href="">合肥</a>
+	                                    <a class="" href="">芜湖</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+	                                    <a class="" href="">合肥</a>
+	                                    <a class="" href="">芜湖</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+	                                   
+									</dd>
+									
+								</dl>
+								<dl class="bg_gray">
+									<dt class="">
+										<span class="letter fl" data-letter="Q" id="Q">Q</span>
+										<span class="fr">青海：</span>
+									</dt>
+									<dd>
+										<a class="" href="">合肥</a>
+	                                    <a class="" href="">芜湖</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+									</dd>
+								</dl>
+								<dl class="">
+									<dt class="">
+										<span class="letter fl">S</span>
+										<span class="fr">山西：</span>
+									</dt>
+									<dd>
+										<a class="" href="">合肥</a>
+	                                    <a class="" href="">芜湖</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+									</dd>
+									<dt class="">
+										
+										<span class="fr">山东：</span>
+									</dt>
+									<dd>
+										<a class="" href="">合肥</a>
+	                                    <a class="" href="">芜湖</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+									</dd>
+								</dl>
+								<dl class="bg_gray">
+									<dt class="">
+										<span class="letter fl" data-letter="X" id="X">X</span>
+										<span class="fr">西藏：</span>
+									</dt>
+									<dd>
+										<a class="" href="">合肥</a>
+	                                    <a class="" href="">芜湖</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+									</dd>
+									<dt class="">
+										<span class="fr">新疆：</span>
+									</dt>
+									<dd>
+										<a class="" href="">合肥</a>
+	                                    <a class="" href="">芜湖</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+									</dd>
+								</dl>
+								<dl class="">
+									<dt class="">
+										<span class="letter fl" data-letter="Y" id="Y">Y</span>
+										<span class="fr">云南：</span>
+									</dt>
+									<dd>
+										<a class="" href="">合肥</a>
+	                                    <a class="" href="">芜湖</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+									</dd>
+									
+								</dl>
+								<dl class="bg_gray">
+									<dt class="">
+										<span class="letter fl" data-letter="Z" id="Z">Z</span>
+										<span class="fr">浙江：</span>
+									</dt>
+									<dd>
+										<a class="" href="">合肥</a>
+	                                    <a class="" href="">芜湖</a>
+	                                    <a class="" href="">蚌埠</a>
+	                                    <a class="" href="">淮南</a>
+	                                    <a class="" href="">马鞍山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+	                                    <a class="" href="">淮北</a>
+	                                    <a class="" href="">铜陵</a>
+	                                    <a class="" href="">安庆</a>
+	                                    <a class="" href="">黄山</a>
+									</dd>
+								</dl>
+							</div>
+							<span class="icon_top_arrow"></span>
+							<span class="icon_close_pop" id="icon_close_pop"></span>
+						</div>
+						<!-- end 城市选择弹框 citySelectPop -->
+
 					</div>
 					<div class="fr hot_city mt10">
 						<span class="icon_hot">热门城市:</span>
@@ -599,6 +986,86 @@
 			$(this).addClass("active").siblings().removeClass("active");
 			var index=$("#meauList a").index(this);
 			$("#activityCon > ul").eq(index).show().siblings().hide();
+		})
+
+       //城市选择弹框
+	   $("#qiehuan").click(function(){
+				$("#citySelectPop").toggle();
+			})
+       $("#letterList a").attr('href','javascript:void(0)');
+       $("#letterList a").click(function(){
+       		$(this).addClass('active').siblings().removeClass("active");
+       		
+       })
+
+        var scrollT = {
+        	'a':'45',
+        	'f':'135',
+        	'g':'178',
+        	'h':'293',
+        	'j':'360',
+        	'l':'427',
+        	'n':'504',
+        	'q':'560',
+        	's':'607',
+        	'x':'719',
+        	'y':'719',
+        	'z':'719',
+        }
+
+        var nScrollHight =  $("#divJumpContent")[0].scrollHeight; //滚动内容的长度
+        console.log(nScrollHight);
+
+
+        // function(obj){
+        // 	$("#divJumpContent").animate({scrollTop:scrollT[obj]},500);
+        // }
+
+
+       $("#a").click(function(){
+       		// console.log($("#A").position().top)
+       		$("#divJumpContent").animate({scrollTop:'45'},500);
+       		
+       })
+       $("#f").click(function(){
+       		// console.log($("#F").offset().top)
+
+       		$("#divJumpContent").animate({scrollTop:'135'},500);
+       })
+       $("#g").click(function(){
+       		// console.log($("#G").offset().top)
+
+       		$("#divJumpContent").animate({scrollTop:"178"},500);
+       })
+       $("#h").click(function(){
+       		// console.log($("#H").offset().top)
+
+       		$("#divJumpContent").animate({scrollTop:"293"},500);
+       })
+       $("#j").click(function(){
+       		// console.log($("#H").offset().top)
+
+       		$("#divJumpContent").animate({scrollTop:"360"},500);
+       })
+       $("#l").click(function(){
+       		$("#divJumpContent").animate({scrollTop:"427"},500);
+       })
+       $("#n").click(function(){
+       		$("#divJumpContent").animate({scrollTop:"504"},500);
+       })
+        $("#q").click(function(){
+       		$("#divJumpContent").animate({scrollTop:"561"},500);
+       })
+		$("#s").click(function(){
+       		$("#divJumpContent").animate({scrollTop:"607"},500);
+       })
+		$("#x,#y,#z").click(function(){
+       		$("#divJumpContent").animate({scrollTop:"719"},500);
+       })
+
+		//关闭城市选择弹框
+		$("#icon_close_pop").click(function(){
+			$(this).parent().hide();
 		})
 	</script>
 </html>

@@ -143,9 +143,12 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .distrInfo .hot_city span{display: inline-block;font-size: 14px;margin-left: 10px}
 .distrInfo .hot_city .icon_hot{background: url(../img/icon_hot.png) no-repeat 0 3px;padding-left: 20px}
 .distrInfo .select_abc ul li{float: left;margin-left:13px;text-align: center;}
-.distrInfo .select_abc ul li a{display:block;color:#000000;border: 1px solid #d3d2d2;width: 18px;height: 18px;
+.distrInfo .select_abc ul li a,
+.citySelectPop .letterList a{display:block;color:#000000;border: 1px solid #d3d2d2;width: 18px;height: 18px;
 	font-size: 13px;background: #f7f7f7;}
-.distrInfo .select_abc ul li a:hover{background: #eb6100;border-color: #eb6100;color: #ffffff}
+.distrInfo .select_abc ul li a:hover,.distrInfo .select_abc ul li a.active,
+.citySelectPop .letterList a:hover,.citySelectPop .letterList a.active
+{background: #eb6100;border-color: #eb6100;color: #ffffff}
 .distrInfo .select_abc ul li.hot{margin: 0;width: 45px;height:20px;background: #eb6100;border-color: #eb6100;border-radius: 5px;color: #ffffff}
 .distrInfo .hot_brand{width: 712px;padding: 8px 13px;border:1px solid #d3d2d2;background: #f7f7f7;margin-top: 10px;font-size: 14px}
 .distrInfo .hot_brand p{width: 40px;color: #666666;}
@@ -757,7 +760,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .carDetailCon .searchBox input {width: 210px;margin-left: 10px;padding:0;}
 .carDetailCon .searchBox button.searcnBtn {background-position: -20px 0;margin: 4px}
 .carDetailCon .meau ul li{width: 142px;border-color: #dddddd}
-.carDetailCon .carInfo{overflow: hidden;margin: 20px 0 0}
+.carDetailCon .carInfo{margin: 20px 0 0}
 .carDetailCon .carInfo .pic_car{width: 300px;height: 300px;}
 
 .top_slide_wrap{width:300px;height:280px;margin:0 auto;position:relative}
@@ -775,7 +778,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .top_slide_wrap .bx-wrapper ul.bx-controls li img{width:88px;height:58px;margin: 1px;}
 .top_slide_wrap .bx-wrapper ul.bx-controls li span{position: absolute;background: #eb6100;color: #ffffff;display: inline-block;width: 30px;height: 15px;line-height: 15px;left: 2px;bottom: 4px;font-size: 12px;text-align: center;}
 
-.carDetailCon .carInfo .middle_info {border-right: 1px solid #dddddd}
+.carDetailCon .carInfo .middle_info {border-right: 1px solid #dddddd;position: relative;}
 .carDetailCon .carInfo .middle_info .paramCon .carSelect{width: 378px}
 .carDetailCon .carInfo .middle_info .paramCon .carSelect a{background: #ededed;width: 125px}
 .carDetailCon .carInfo .middle_info .car_cuts{width: 374px;overflow: hidden;border:1px solid #dddddd;border-left: 3px solid #eb6100;margin:10px 0 0 20px}
@@ -821,6 +824,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .carDetailCon .hotSales .left_con .list_con .com_ing {height: 30px;line-height: 30px;border-bottom: 1px solid #dddddd;font-size: 14px;color: #666666}
 .carDetailCon .hotSales .left_con .list_con .com_ing span{font-size: 14px}
 .carDetailCon .hotSales .left_con .list_con .com_ing a.box{display: inline-block;width: 50px;height:20px;border-radius: 5px;background: #EB6100;color: #ffffff;text-align: center;line-height: 20px;margin: 5px 0 0 25px;font-size: 12px}
+.carDetailCon .hotSales .left_con .list_con .com_ing a.box:hover{background: #ce5704}
 
 .carDetailCon .hotSales .right_con .img_list{margin-top:-10px;width: 200px }
 .carDetailCon .hotSales .right_con .img_list ul li{float: left;margin-top: 10px;width: 200px;height: 140px;overflow: hidden;}
@@ -829,8 +833,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .carDetailCon .carPhoto .pic_nav a{display: block;float: left;width: 20%;text-align: center;line-height: 40px;font-size: 14px}
 .carDetailCon .carPhoto .pic_nav a:hover,.carDetailCon .carPhoto .pic_nav a.active{color: #eb6100;font-size: 16px}
 .carDetailCon .carPhoto .pic_box{border:1px solid #eb6100;overflow: hidden;}
-.carDetailCon .carPhoto .pic_box img,
-.carDetailCon .hotSales .right_con .img_list ul li img{transition: 1s}
+.carDetailCon .carPhoto .pic_box img{transition: 1s}
 .carDetailCon .carPhoto .pic_box .left_pic{width: 398px}
 .carDetailCon .carPhoto .pic_box .left_pic .top{position: relative;width: 398px;height: 256px;overflow: hidden; }
 .carDetailCon .carPhoto .pic_box .left_pic .top span{position: absolute; left: 0;bottom: 0;display: block;width: 80px;height: 50px;line-height: 50px;background: #eb6100;color: #ffffff;font-size: 22px;text-align: center;}
@@ -839,8 +842,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .carDetailCon .carPhoto .pic_box .right_pic ul{margin-top: -2px;}
 .carDetailCon .carPhoto .pic_box .right_pic ul li{width: 198px;height:170px;float:left;border-left: 2px solid #eb6100;border-top: 2px solid #eb6100;overflow: hidden;position: relative;}
 .carDetailCon .carPhoto .pic_box .left_pic .top img:hover,
-.carDetailCon .carPhoto .pic_box .right_pic ul li img:hover,
-.carDetailCon .hotSales .right_con .img_list ul li img:hover{transform: scale(1.2);}
+.carDetailCon .carPhoto .pic_box .right_pic ul li img:hover{transform: scale(1.2);}
 .carDetailCon .carPhoto .pic_box .right_pic ul li p.mask{width: 100%;height: 100%;background: #000;opacity: .7;position: absolute;left: 0;top:0;color: #ffffff;text-align: center;}
 .carDetailCon .carPhoto .pic_box .right_pic ul li p.mask b{display: block;font-size: 36px;padding: 40px 0 5px;font-family: "黑体"}
 .carDetailCon .carPhoto .pic_box .right_pic ul li p.mask a{display: block;font-size: 16px;color: #ffffff}
@@ -856,3 +858,30 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .dealerRecom ul.dealerList li p span.addCon{width: 243px}
 .dealerRecom ul.dealerList li p span.tel i{background-position: -15px 0}
 .dealerRecom ul.dealerList li  a.cuxiao{display: block;font-size: 14px;padding-top: 10px}
+
+
+/*城市选择弹框*/
+
+.citySelectPop{width: 500px;height: 320px;border:1px solid #cccccc;background:#ffffff;z-index: 99;position: absolute;top:40px;left: 85px;display: none}
+.icon_top_arrow{display: block;height: 20px;width: 20px;background: url(../img/icon_city_select.png) no-repeat;position: absolute;top:-20px;left: 50px}
+.icon_close_pop{display: block;height: 20px;width: 20px;background: url(../img/icon_city_select.png) no-repeat -40px 0;position: absolute;top:2px;right: 2px;cursor: pointer;}
+.citySelectPop .hot_city_pop{overflow: hidden;border-bottom: 1px solid #cecece}
+.citySelectPop .hot_city_pop .city_search{border-radius: 5px;width: 135px;height: 25px;line-height: 25px;border:1px solid #cccccc;margin:10px;}
+.citySelectPop .hot_city_pop .city_search input{width: 99px;line-height: 24px;outline: none;padding:0 2px;}
+.citySelectPop .hot_city_pop .city_search i{width: 20px;height: 20px;background: url(../img/icon_city_select.png) no-repeat -20px 0;margin:2px 5px 0 5px;}
+.citySelectPop .hot_city_pop .city_search input:focus i{display: none;}
+.citySelectPop .hot_city_pop .hot_list{margin: 13px 0 0 20px;}
+.citySelectPop .hot_city_pop .hot_list a{display: inline-block;margin-right: 5px}
+.citySelectPop .letterList {overflow: hidden;padding:10px 0;border-bottom:1px solid #cecece }
+.citySelectPop .letterList a{display: block;float: left;text-align: center;margin-left: 10px}
+.citySelectPop .city_list_pop{max-height: 230px;overflow-y:auto;}
+.citySelectPop .city_list_pop dl{padding:8px 0;overflow: hidden;margin:0;border-top: 1px solid #cecece }
+.citySelectPop .city_list_pop dl.no_top_border{border-top: none}
+.citySelectPop .city_list_pop dl.bg_gray{background: #f5f5f5}
+.citySelectPop .city_list_pop dl dt{width: 90px;color: #333;text-align: right;font-weight: bold;padding-top: 2px;float: left;font-size: 13px}
+.citySelectPop .city_list_pop dl dd{width: 380px;float: left;}
+.citySelectPop .city_list_pop dl dd a{padding:2px 3px;font-size: 13px;line-height: 25px;}
+.citySelectPop .city_list_pop dl dd a:hover,.citySelectPop .city_list_pop dl dd a.current{background: #eb6100;color: #ffffff}
+.citySelectPop .city_list_pop dl span.letter{font-family: Arial,Helvetica,sans-serif;font-size: 18px;color: #d0d0d0;font-weight: 100;padding-left: 10px;    margin-top: -2px;}
+.citySelectPop .city_list_pop dl dd a.disabled{color: #999; word-break: keep-all; white-space: nowrap;cursor: default}
+.citySelectPop .city_list_pop dl dd a.disabled:hover{background: none;color: #999;}
