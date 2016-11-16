@@ -155,18 +155,18 @@
 								</div>
 							</div> <!-- hot_city_pop -->
 							<div class="letterList" id="letterList">
-								<a href="" class="active" id="a">A</a>
-								<a href="" id="f">F</a>
-								<a href="" id="g">G</a>
-								<a href="" id="h">H</a>
-								<a href="" id="j">J</a>
-								<a href="" id="l">L</a>
-								<a href="" id="n">N</a>
-								<a href="" id="q">Q</a>
-								<a href="" id="s">S</a>
-								<a href="" id="x">X</a>
-								<a href="" id="y">Y</a>
-								<a href="" id="z">Z</a>
+								<a href="" class="active" id="a" onclick="scrollTo('a')">A</a>
+								<a href="" id="f" onclick="scrollTo('f')">F</a>
+								<a href="" id="g" onclick="scrollTo('g')">G</a>
+								<a href="" id="h" onclick="scrollTo('h')">H</a>
+								<a href="" id="j" onclick="scrollTo('j')">J</a>
+								<a href="" id="l" onclick="scrollTo('l')">L</a>
+								<a href="" id="n" onclick="scrollTo('n')">N</a>
+								<a href="" id="q" onclick="scrollTo('q')">Q</a>
+								<a href="" id="s" onclick="scrollTo('s')">S</a>
+								<a href="" id="x" onclick="scrollTo('x')">X</a>
+								<a href="" id="y" onclick="scrollTo('y')">Y</a>
+								<a href="" id="z" onclick="scrollTo('z')">Z</a>
 							</div> <!-- 字母列表 -->
 							<div class="city_list_pop" id="divJumpContent">
 								<dl class="bg_gray no_top_border">
@@ -997,7 +997,6 @@
        		$(this).addClass('active').siblings().removeClass("active");
        		
        })
-
         var scrollT = {
         	'a':'45',
         	'f':'135',
@@ -1006,63 +1005,22 @@
         	'j':'360',
         	'l':'427',
         	'n':'504',
-        	'q':'560',
+        	'q':'561',
         	's':'607',
         	'x':'719',
         	'y':'719',
         	'z':'719',
         }
-
+        // console.log(scrollT['a'])
         var nScrollHight =  $("#divJumpContent")[0].scrollHeight; //滚动内容的长度
-        console.log(nScrollHight);
-
-
-        // function(obj){
-        // 	$("#divJumpContent").animate({scrollTop:scrollT[obj]},500);
-        // }
-
-
-       $("#a").click(function(){
-       		// console.log($("#A").position().top)
-       		$("#divJumpContent").animate({scrollTop:'45'},500);
-       		
-       })
-       $("#f").click(function(){
-       		// console.log($("#F").offset().top)
-
-       		$("#divJumpContent").animate({scrollTop:'135'},500);
-       })
-       $("#g").click(function(){
-       		// console.log($("#G").offset().top)
-
-       		$("#divJumpContent").animate({scrollTop:"178"},500);
-       })
-       $("#h").click(function(){
-       		// console.log($("#H").offset().top)
-
-       		$("#divJumpContent").animate({scrollTop:"293"},500);
-       })
-       $("#j").click(function(){
-       		// console.log($("#H").offset().top)
-
-       		$("#divJumpContent").animate({scrollTop:"360"},500);
-       })
-       $("#l").click(function(){
-       		$("#divJumpContent").animate({scrollTop:"427"},500);
-       })
-       $("#n").click(function(){
-       		$("#divJumpContent").animate({scrollTop:"504"},500);
-       })
-        $("#q").click(function(){
-       		$("#divJumpContent").animate({scrollTop:"561"},500);
-       })
-		$("#s").click(function(){
-       		$("#divJumpContent").animate({scrollTop:"607"},500);
-       })
-		$("#x,#y,#z").click(function(){
-       		$("#divJumpContent").animate({scrollTop:"719"},500);
-       })
-
+        // console.log(nScrollHight);
+        //内容滚动高度
+        function scrollTo(obj){
+        	var scroll = scrollT[obj];
+        	// console.log(scroll) 
+        	$("#divJumpContent").animate({scrollTop:scroll},500);
+        }
+        
 		//关闭城市选择弹框
 		$("#icon_close_pop").click(function(){
 			$(this).parent().hide();
